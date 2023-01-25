@@ -1,4 +1,4 @@
-/* Global -------------------------*/
+/* ------------------------- Global -------------------------*/
 *,
 *:before
 *::after{
@@ -16,6 +16,22 @@ image{
     width: 100%;
 }
 
+button{
+    font-family: "Domine", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--midblue);
+    padding: 1em 2em;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: var(--smooth);
+}
+button:hover{
+    color: var(--darkblue);
+}
 .container{
     max-width: 1920px;
     width: 100%;
@@ -36,4 +52,66 @@ image{
     --darkblue: #112D4E;
     --smooth: all .3 ease-in;
     --shadow: 0 7px 29px rgb(100, 100, 111, .2);
+}
+/*------------------------- header -------------------------*/
+header{
+    background-color: var(--midblue);
+}
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px 55px 15px;
+    background-color: var(--lightblue);
+}
+/*------------------------- Logo -------------------------*/
+.navbar-logo{
+    display: flex;
+    align-items: center;
+}
+.navbar-logo img{
+    width: 63px;
+}
+.navbar-logo p {
+    font-family: "Red Hat Display", serif;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    color: var(--darkblue);
+    margin-left: 14px;
+
+}
+/*------------------------- Menu -------------------------*/
+.navbar-links{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    /*transform: translateX(-100%);*/
+    background-color: var(--darkblue);
+    /*opacity: 0;*/
+    z-index: 5;
+    transition: var(--smooth);
+}
+
+.navbar-link{
+    font-size: 1.125rem; 
+    list-style: none;
+    margin: 55px;
+}
+
+.navbar-link a {
+    font-family: "Domine", serif;
+    color: white;
+    text-decoration: none;
+    transition: var(--smooth);
+}
+.navbar-link a:hover{
+     color: var(--midblue);
+     transition: var(--smooth);
+}
+.navbar-btn{
+    font-size: 1.125rem;
+    margin-left: 35px;
+    border: 2px solid var(--darkblue);
 }
