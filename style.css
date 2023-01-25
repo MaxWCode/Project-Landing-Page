@@ -25,4 +25,15 @@ image{
 .wrapper{
     max-width: 1440px;
     width: 100%;
+    margin: 0 auto;
+}
+
+:root{
+
+    --white: #F9F7F7;
+    --lightblue: #DBE2EF;
+    --midblue: #3F72AF;
+    --darkblue: #112D4E;
+    --smooth: all .3 ease-in;
+    --shadow: 0 7px 29px rgb(100, 100, 111, .2);
 }
